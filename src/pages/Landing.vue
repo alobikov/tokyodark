@@ -8,12 +8,12 @@ export default {};
 
 <style>
 .background {
-  background-color: black;
-  background-image: url("~assets/Main Image@1x.png");
+  background-color:rgba(0,0,0,0);
+  /* background-image: url("~assets/Main Image@1x.png");
   background-size: content;
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: center;
+  background-position-y: center; */
 }
 .q-page-container {
   /* padding-top: 0px !important; */

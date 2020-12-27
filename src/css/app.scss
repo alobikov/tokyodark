@@ -1,1 +1,17 @@
 // app global css in SCSS form
+@import './tokyodark.scss';
+
+@font-face {
+  font-family: MainFont;
+  src: url("fonts/Montserrat-Light.ttf") format("opentype");
+}
+@font-face {
+  font-family: MainFont;
+  src: url("fonts/Montserrat-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: MainFont;
+  src: url("fonts/Montserrat-Bold.otf") format("opentype");
+  font-weight: bold;
+}

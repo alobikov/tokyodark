@@ -1,0 +1,34 @@
+$ui-color-lightgrey: #e8e8e8;
+.text-lightgrey {
+  color: $ui-color-lightgrey;
+}
+.bg-lightgrey {
+  background: $ui-color-lightgrey;
+}
+
+$ui-color-tokyored: #c11932;
+.text-tokyored {
+  color: $ui-color-tokyored;
+}
+.bg-tokyored {
+  background: $ui-color-tokyored;
+}
+
+.appbtn {
+  font-family: MainFont;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.25em;
+  border-radius: 2px;
+}
+
+.appbtn-size-md {
+  height: 52px;
+  width: 129px;
+}
+.appbtn-size-lg {
+  height: 52px;
+  width: 190px;
+}
