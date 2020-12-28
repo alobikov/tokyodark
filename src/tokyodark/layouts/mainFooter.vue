@@ -18,9 +18,9 @@
         </div>
         <div class="row justify-between items-center full-width">
           <div class="row items-center ">
-            <btnStadirnir @locationClicked="$emit('locationClicked')" />
-            <span>UM OKKUR</span>
-            <span>HAFÐU SAMBAND</span>
+            <btnStadirnir class="q-ml-md" @locationClicked="$emit('locationClicked')" />
+            <btnFooter>UM OKKUR</btnFooter>
+            <btnFooter>HAFÐU SAMBAND</btnFooter>
           </div>
           <div class="row">
             <span class="line-height-23">NÁÐU Í APPIÐ</span>
@@ -45,9 +45,10 @@
 
 <script>
 import btnStadirnir from 'src/tokyodark/components/buttons/btnStadirnir'
+import btnFooter from 'src/tokyodark/components/buttons/btnFooter'
 export default {
   name: 'mainFooter',
-  components: { btnStadirnir }
+  components: { btnStadirnir, btnFooter }
 }
 </script>
 
