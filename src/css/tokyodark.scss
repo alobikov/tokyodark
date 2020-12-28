@@ -6,6 +6,15 @@ $ui-color-lightgrey: #e8e8e8;
   background: $ui-color-lightgrey;
 }
 
+$ui-color-beige: #F7F3F0;
+.text-beige {
+  color: $ui-color-beige;
+}
+
+.bg-beige {
+  background: $ui-color-beige;
+}
+
 $ui-color-tokyored: #c11932;
 .text-tokyored {
   color: $ui-color-tokyored;
@@ -22,6 +31,14 @@ $ui-color-tokyored: #c11932;
   line-height: 18px;
   letter-spacing: 0.25em;
   border-radius: 2px;
+}
+.footerbtn {
+    font-family: MainFont;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 0.25em;
+    line-height: 19px;
 }
 
 .appbtn-size-md {

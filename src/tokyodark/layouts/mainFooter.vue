@@ -1,35 +1,57 @@
 <template>
-      <q-footer bordered class="bg-dark text-white">
-      <q-toolbar class='toolbar-xpadding'>
-        <q-toolbar-title class="row justify-start items-center no-wrap">
-          <div class='footer-right-icons row no-wrap'>
-            <q-img class='margin-right-12' width='19px' height='19px' src="~assets/cameraIcn.svg" />
-            <q-img class='marign-right-15' width='19px' height='19px' src="~assets/facebookIcn.svg" />
+  <q-footer bordered class="bg-dark text-white">
+    <q-toolbar class="toolbar-xpadding">
+      <q-toolbar-title class="row justify-start items-center no-wrap">
+        <div class="footer-right-icons row no-wrap">
+          <q-img
+            class="margin-right-12"
+            width="19px"
+            height="19px"
+            src="~assets/cameraIcn.svg"
+          />
+          <q-img
+            class="marign-right-15"
+            width="19px"
+            height="19px"
+            src="~assets/facebookIcn.svg"
+          />
+        </div>
+        <div class="row justify-between items-center full-width">
+          <div class="row items-center ">
+            <btnStadirnir @locationClicked="$emit('locationClicked')" />
+            <span>UM OKKUR</span>
+            <span>HAFÐU SAMBAND</span>
           </div>
-          <div class="row justify-between items-center full-width">
-            <div class='row items-center '>
-              <span>STAÐIRNIR HAFÐU</span>
-              <span>UM OKKUR</span>
-              <span>SAMBAND</span>
-            </div>
-            <div class="row">
-              <span class="line-height-23">NÁÐU Í APPIÐ</span>
-              <q-img class='margin-right-12' width='19px' height='23px' src="~assets/androidIcn.svg" />
-              <q-img class='marign-right-15' width='19px' height='23px' src="~assets/iosIcn.svg" />
-            </div>
+          <div class="row">
+            <span class="line-height-23">NÁÐU Í APPIÐ</span>
+            <q-img
+              class="margin-right-12"
+              width="19px"
+              height="23px"
+              src="~assets/androidIcn.svg"
+            />
+            <q-img
+              class="marign-right-15"
+              width="19px"
+              height="23px"
+              src="~assets/iosIcn.svg"
+            />
           </div>
-        </q-toolbar-title>
-      </q-toolbar>
-    </q-footer>
+        </div>
+      </q-toolbar-title>
+    </q-toolbar>
+  </q-footer>
 </template>
 
 <script>
+import btnStadirnir from 'src/tokyodark/components/buttons/btnStadirnir'
 export default {
-  name: 'mainFooter'
+  name: 'mainFooter',
+  components: { btnStadirnir }
 }
 </script>
 
-<style  lang='scss' scoped>
+<style lang="scss" scoped>
 .toolbar-xpadding {
   padding: 0 20px;
 }

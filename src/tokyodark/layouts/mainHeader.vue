@@ -1,27 +1,27 @@
 <template>
   <q-header class="transparent">
-    <q-toolbar class='header__toolbar'>
-      <small-twisted-logo class="header__logo"/>
+    <q-toolbar class="header__toolbar">
+      <small-twisted-logo size="52px" class="header__logo" />
       <span>MATSEÐILL</span>
       <span>TILBOÐ</span>
       <span>VEISLUBAKKAR</span>
       <span>ENG</span>
 
       <q-toolbar-title></q-toolbar-title>
-       <btnMittTokyo />
+      <btnMittTokyo />
       <btnPanta class="q-ml-sm" />
     </q-toolbar>
   </q-header>
 </template>
 
 <script>
-import btnPanta from "src/tokyodark/components/buttons/btnPanta";
-import btnMittTokyo from "src/tokyodark/components/buttons/btnMittTokyo";
-import smallTwistedLogo from "src/tokyodark/components/logos/smallTwistedLogo";
+import btnPanta from 'src/tokyodark/components/buttons/btnPanta'
+import btnMittTokyo from 'src/tokyodark/components/buttons/btnMittTokyo'
+import smallTwistedLogo from 'src/tokyodark/components/logos/smallTwistedLogo'
 export default {
-  name: "mainHeader",
+  name: 'mainHeader',
   components: { btnPanta, btnMittTokyo, smallTwistedLogo }
-};
+}
 </script>
 
 <style lang="scss" scoped>

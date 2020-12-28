@@ -1,13 +1,13 @@
 <template>
-  <q-btn class="appbtn appbtn-size-md bg-primary" unelevated>MEIRA</q-btn>
+  <q-btn class="appbtn appbtn-size-md bg-primary" text-color="white" unelevated
+    >MEIRA</q-btn
+  >
 </template>
 
 <script>
 export default {
-  name: "btnMewira"
-};
+  name: 'btnMewira'
+}
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

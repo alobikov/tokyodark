@@ -8,11 +8,19 @@
       </q-tabs>
     </q-header> -->
     <main-header />
-    <right-drawer/>
+    <right-drawer />
     <q-page-container>
-      <router-view />
+      <!-- <router-view /> -->
+      <q-page>
+        <q-dialog v-model="isLocationDialog">
+          <chooseLocation />
+        </q-dialog>
+        <landingPromo />
+      </q-page>
     </q-page-container>
-    <main-footer></main-footer>
+    <main-footer
+      @locationClicked="isLocationDialog = !isLocationDialog"
+    ></main-footer>
   </q-layout>
 </template>
 
@@ -22,7 +30,7 @@
 }
 
 .app-layout {
-  background-image: url("~assets/Main Image@1x.png");
+  background-image: url('~assets/Main Image@1x.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -31,12 +39,24 @@
 </style>
 
 <script>
-import mainHeader from "src/tokyodark/layouts/mainHeader";
-import rightDrawer from 'src/tokyodark/layouts/rightDrawer';
-import mainFooter from 'src/tokyodark/layouts/mainFooter';
+import mainHeader from 'src/tokyodark/layouts/mainHeader'
+import rightDrawer from 'src/tokyodark/layouts/rightDrawer'
+import mainFooter from 'src/tokyodark/layouts/mainFooter'
+import landingPromo from 'src/tokyodark/components/landingPromo'
+import chooseLocation from 'src/tokyodark/components/modals/chooseLocation'
 export default {
-  name: "MainLayout",
-  components: { mainHeader, rightDrawer, mainFooter },
-
-};
+  name: 'MainLayout',
+  components: {
+    mainHeader,
+    rightDrawer,
+    mainFooter,
+    landingPromo,
+    chooseLocation
+  },
+  data() {
+    return {
+      isLocationDialog: false
+    }
+  }
+}
 </script>

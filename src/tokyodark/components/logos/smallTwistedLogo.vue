@@ -1,16 +1,21 @@
 <template>
-  <q-img calss="absolute-center" width='52px' height='52px' src="~assets/logoTwistedSmall.svg" />
+  <q-img
+    calss="absolute-center"
+    :width="size"
+    :height="size"
+    src="~assets/logoTwistedSmall.svg"
+  />
 </template>
 
 <script>
 export default {
-  name: 'smallTwistedLogo'
+  name: 'smallTwistedLogo',
+  props: ['size']
 }
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 .scoped-image {
   margin: 21px;
 }
-
 </style>
